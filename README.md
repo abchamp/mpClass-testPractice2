@@ -23,7 +23,7 @@ class Login extends Component {
 export default Login;
 ```
 
-6 ในไฟล์ index.js ให้แก้เป็นตามนี้
+6. ในไฟล์ index.js ให้แก้เป็นตามนี้
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -63,3 +63,37 @@ export default App;
 ![Image](https://raw.githubusercontent.com/ABChamp/mpClass-testPractice2/master/images/home_component.png)
 
 Ref1: https://reacttraining.com/react-router/web/guides/quick-start
+
+## การส่ง URL param ที่จะเอาไปใช้ในหน้าต่อไป (ในแบบทดสอบนี้)
+เวลาที่ต้องการที่ส่งค่า username password ไปอีกหน้าหนี่งผ่าน get method (ใช้ในการแบบทดสอบนี้เท่านั้น ชีวิตจริงไม่ทำแบบนี้)
+
+1. แก้ไขโค้ตในหน้า App.js ตามข้างล่าง (ตรง route ของ home)
+```
+<Switch>
+  <Route exact path="/" component={Login} />
+  <Route path="/register" component={Register} />
+  <Route path="/home/:id" component={Home} />
+</Switch>
+```
+
+2. หน้า home จะรับ param ผ่านตัว props ตามโค้ตด้านล่าง
+```
+import React, { Component } from 'react'
+
+class Home extends Component {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        return <p> Home Component {this.props.match.params.id}</p>
+    }
+}
+
+export default Home;
+```
+
+ผลรับที่ได้ตามด้านล่างนี้
+![Image]
+()
+
+Ref2: https://reacttraining.com/react-router/web/example/url-params
