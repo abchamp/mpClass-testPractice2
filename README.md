@@ -8,8 +8,8 @@ npx create-react-app "ชื่อโฟรเดอร์"
 npm install react-router-dom
 ```
 3. ในโฟรเดอร์ src ให้สร้างโฟรเดอร์ที่มีชื่อว่า components 
-4. สร้าง 3 ไฟล์ในโฟรเดอร์ componet ดังนี้ Login.js, Register.js, Home.js (รูป 3, 4)
-
+4. สร้าง 3 ไฟล์ในโฟรเดอร์ componet ดังนี้ Login.js, Register.js, Home.js 
+![Image](https://raw.githubusercontent.com/ABChamp/mpClass-testPractice2/master/images/file_structure.png)
 5. ในทั้งสามให้กำหนดตามด้านล่างตามชื่อไฟล์
 ```
 import React, { Component } from "react";
@@ -59,3 +59,4 @@ class App extends Component {
 export default App;
 ```
 8. yarn start หรือ npm run start เพื่อทดสอบการทำงานโดยการพิมพ์ชื่อ /register, /home ตามหลัง url
+![Image](https://raw.githubusercontent.com/ABChamp/mpClass-testPractice2/master/images/home_component.png)
