@@ -59,4 +59,7 @@ class App extends Component {
 export default App;
 ```
 8. yarn start หรือ npm run start เพื่อทดสอบการทำงานโดยการพิมพ์ชื่อ /register, /home ตามหลัง url
+
 ![Image](https://raw.githubusercontent.com/ABChamp/mpClass-testPractice2/master/images/home_component.png)
+
+Ref1: https://reacttraining.com/react-router/web/guides/quick-start
