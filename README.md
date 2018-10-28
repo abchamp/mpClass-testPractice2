@@ -93,7 +93,6 @@ export default Home;
 ```
 
 ผลรับที่ได้ตามด้านล่างนี้
-![Image]
-()
+![Image](https://raw.githubusercontent.com/ABChamp/mpClass-testPractice2/master/images/home_component_param.png)
 
 Ref2: https://reacttraining.com/react-router/web/example/url-params
