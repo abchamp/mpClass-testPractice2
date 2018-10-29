@@ -93,6 +93,14 @@ export default Home;
 ```
 
 ผลรับที่ได้ตามด้านล่างนี้
+
 ![Image](https://raw.githubusercontent.com/ABChamp/mpClass-testPractice2/master/images/home_component_param.png)
 
 Ref2: https://reacttraining.com/react-router/web/example/url-params
+
+## redict ไปยังหน้าอื่น
+วิธีที่จะเปลี่ยนหน้าอื่นๆ ของ react-router 
+ใช้โค้ตดังนี้
+```
+this.props.history.push('/home/1234')
+```
