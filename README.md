@@ -104,3 +104,8 @@ Ref2: https://reacttraining.com/react-router/web/example/url-params
 ```
 this.props.history.push('/home/1234')
 ```
+
+## (Express-NodeJs) การสร้าง timestamp ที่จะเก็บไว้ใน database
+```
+const newDate = new Date().toLocalString('th-TH', { timeZone: 'Asia/Bangkok'})
+```
