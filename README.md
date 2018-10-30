@@ -109,3 +109,6 @@ this.props.history.push('/home/1234')
 ```
 const newDate = new Date().toLocalString('th-TH', { timeZone: 'Asia/Bangkok'})
 ```
+
+## ใบ้
+ให้เก็บ email แยกระหว่าง register และผ่าน facebook (เพื่อความง่าย)
